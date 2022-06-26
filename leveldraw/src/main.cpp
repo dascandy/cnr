@@ -178,10 +178,23 @@ void putcolor(uint32_t x, uint32_t y, Color color) {
 }
 
 void drawShape(uint16_t shape, uint16_t frame, uint32_t dx, uint32_t dy, uint32_t dz) {
+  switch(shape) {
+  case 1592:
+  case 1593:
+  case 1594:
+  case 1608:
+  case 1609:
+    return;
+  }
   shape--;
   std::vector<uint8_t> data;
-  data.resize(std::filesystem::file_size("shapes.flx." + std::to_string(shape)));
-  std::ifstream("shapes.flx." + std::to_string(shape)).read(reinterpret_cast<char*>(data.data()), data.size());
+  try {
+    data.resize(std::filesystem::file_size("shapes.flx." + std::to_string(shape)));
+    std::ifstream("shapes.flx." + std::to_string(shape)).read(reinterpret_cast<char*>(data.data()), data.size());
+  } catch (...) {
+    printf("Cannot draw %s\n", std::to_string(shape).c_str());
+    return;
+  }
   ShpHeader* h = reinterpret_cast<ShpHeader*>(data.data());
   std::span<FrameHeader> fhs{reinterpret_cast<FrameHeader*>(data.data() + sizeof(ShpHeader)),
                             reinterpret_cast<FrameHeader*>(data.data() + sizeof(ShpHeader)) + h->count};

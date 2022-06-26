@@ -23,6 +23,7 @@ int main(int, const char** argv) {
   std::ifstream(argv[1]).read(reinterpret_cast<char*>(data.data()), data.size());
   Header* header = reinterpret_cast<Header*>(data.data());
   FileEntry* firstEntry = reinterpret_cast<FileEntry*>(header+1);
+  printf("%u entries\n", header->fileCount);
   std::span<FileEntry> entries{firstEntry, firstEntry + header->fileCount};
   size_t index = 0;
   for (auto& entry : entries) {
