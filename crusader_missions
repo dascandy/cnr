@@ -1,0 +1,42 @@
+Remorse:
+Mission 1: 0: mission 1
+Mission 2: 2: mission 2
+Mission 3: 4: thermatron manufacturing plant
+Mission 4: 6: blow up comms
+Mission 5: 8: first half, 9: second half
+Mission 6: 10: kidnap snell? (mission 6)
+Mission 7: 11: Blow up nerve gas stockpile, 12: Blow up nerve gas stockpile
+Mission 8: 13,14: first mission with extra protection stuff, 5?
+Mission 9: 15:
+Mission 10: 16: mission 10
+Mission 11: 17: first half
+Mission 12: 19: 
+Mission 13: 21: mission 13
+Mission 14: 23: mission 14, 24: mission 14 with cheese fart
+Mission 15: 25: mission 15
+28: Rebel base
+29: destroyed Rebel base
+
+Regret:
+fixed.dat.0/1 == mission 1 (saucykobold 1-2)
+fixed.dat.2 == mission 2 (saucykobold 3-5)
+fixed.dat.3/4 == mission 3 (saucykobold 6-8)
+fixed.dat.5/6 == mission 4 (saucykobold 9-12)
+fixed.dat.7/8 == mission 5 (saucykobold 13-
+fixed.dat.9 == mission 6
+fixed.dat.10/11 == mission 7
+fixed.dat.12/13 == mission 8
+fixed.dat.14/15 == mission 9
+fixed.dat.16-19 == mission 10
+fixed.dat.20-22 == rebel base
+
+23: alt for 5
+24,25: alt for 4
+26,31: alt for 2
+27: guy pointing at screen, empty room
+28: alt for 18
+29,30: alt for 3
+33: jassica16
+
+
+
